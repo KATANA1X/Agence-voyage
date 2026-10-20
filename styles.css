@@ -5,3 +5,9 @@
     background-position: center;
     min-height: 80vh;
 }
+
+/* Images des destinations */
+.card-img-top {
+    height: 220px;
+    object-fit: cover;
+}
