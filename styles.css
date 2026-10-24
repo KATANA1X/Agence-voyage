@@ -11,3 +11,13 @@
     height: 220px;
     object-fit: cover;
 }
+
+/* formulaire */
+.formulaire {
+    background-color: #ebe6e6;
+    font-family: Arial, sans-serif;
+    padding: 2rem;
+    border-style: ridge;
+    border-width: 8px;
+    border-color: #e6a51a;
+}

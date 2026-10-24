@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KATANA VOYAGE</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <!-- Barre de navigation -->
-    <header>
+    <header style="position: fixed; top: 0px; width: 100%; z-index: 1000;">
         <nav class="navbar navbar-expand-md bg-dark" data-bs-theme="dark">
             <div class="container">
                 <a class="navbar-brand d-flex align-items-center" href="#accueil">
@@ -99,13 +100,13 @@
                         <h3 class="accordion-header">
                             <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#circuit-1" aria-expanded="true" aria-controls="circuit-1">
-                                Côte d'Ivoire essentielle, 10 jours
+                                Côte d’Ivoire essentiel, 10 jours
                             </button>
                         </h3>
                         <div id="circuit-1" class="accordion-collapse collapse show"
                             data-bs-parent="#accordeon-circuits">
                             <div class="accordion-body">
-                                <p>Yamoussoukro, Abidjan et Bouaké : villes, temples et cuisine en un seul voyage.</p>
+                                <p>Abidjan, Yamoussoukro et Bouaké, entre villes, culture et cuisine.</p>
                                 <a href="#contact">Voir les détails</a>
                             </div>
                         </div>
@@ -116,12 +117,12 @@
                         <h3 class="accordion-header">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#circuit-2" aria-expanded="false" aria-controls="circuit-2">
-                                Autour de Yamoussoukro, 5 jours
+                                La côte atlantique, 5 jours
                             </button>
                         </h3>
                         <div id="circuit-2" class="accordion-collapse collapse" data-bs-parent="#accordeon-circuits">
                             <div class="accordion-body">
-                                <p>Visite des sites historiques et culturels autour de Yamoussoukro.</p>
+                                <p>Grand-Bassam, Assinie, plages et détente.</p>
                                 <a href="#contact">Voir les détails</a>
                             </div>
                         </div>
@@ -132,13 +133,12 @@
                         <h3 class="accordion-header">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#circuit-3" aria-expanded="false" aria-controls="circuit-3">
-                                Côte d'Ivoire ensoleillée, 7 jours
+                                Les montagnes de l’Ouest, 7 jours
                             </button>
                         </h3>
                         <div id="circuit-3" class="accordion-collapse collapse" data-bs-parent="#accordeon-circuits">
                             <div class="accordion-body">
-                                <p>Plages de sable fin, richesse culturelle et climat tropical dans le sud de la Côte
-                                    d'Ivoire.</p>
+                                <p>Man, cascades, forêts et villages.</p>
                                 <a href="#contact">Voir les détails</a>
                             </div>
                         </div>
@@ -153,7 +153,7 @@
                 <h2 class="mb-4 text-center">Contactez-nous</h2>
                 <div class="row justify-content-center">
                     <div class="col-12 col-md-8 col-lg-6">
-                        <form action="#">
+                        <form class="formulaire" action="#">
 
                             <div class="mb-3">
                                 <label for="nom" class="form-label">Nom</label>
@@ -172,18 +172,15 @@
                                     <option value="" selected>Choisissez une destination</option>
                                     <option value="yamoussoukro">Yamoussoukro</option>
                                     <option value="abidjan">Abidjan</option>
-                                    <option value="bouaké">Bouake</option>
+                                    <option value="bouake">Bouaké</option>
                                     <option value="autre">Autre</option>
                                 </select>
                             </div>
-
 
                             <div class="mb-3">
                                 <label for="message" class="form-label">Message</label>
                                 <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
                             </div>
-
-
 
                             <button type="submit" class="btn btn-warning">Envoyer</button>
                         </form>
@@ -192,7 +189,20 @@
             </div>
         </section>
     </main>
-
+    <!-- Pied de page -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <div class="mb-3">
+                <a href="#" class="text-white fs-4 mx-2" aria-label="Facebook"><i class="fa-brands fa-facebook"
+                        aria-hidden="true"></i></a>
+                <a href="#" class="text-white fs-4 mx-2" aria-label="Instagram"><i class="fa-brands fa-instagram"
+                        aria-hidden="true"></i></a>
+                <a href="#" class="text-white fs-4 mx-2" aria-label="YouTube"><i class="fa-brands fa-youtube"
+                        aria-hidden="true"></i></a>
+            </div>
+            <p class="mb-0">&copy; 2026 KATANA VOYAGE. Tous droits réservés.</p>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
